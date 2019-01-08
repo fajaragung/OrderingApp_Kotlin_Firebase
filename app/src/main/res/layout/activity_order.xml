@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusableInTouchMode="true"
+>
+
+    <include
+            layout="@layout/support_toolbar"
+    />
+
+    <EditText
+            android:id="@+id/fieldName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_high"
+            android:layout_marginStart="@dimen/layout_high"
+            android:layout_marginEnd="@dimen/layout_high"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:background="@drawable/bg_field1"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="@dimen/layout_low"
+            android:hint="@string/full_name"
+            android:textSize="@dimen/text_mid_size"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/overlock"
+            tools:ignore="Autofill"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_low"
+            android:layout_marginStart="@dimen/layout_high"
+            android:layout_marginEnd="@dimen/layout_high"
+            android:layout_marginBottom="@dimen/layout_low"
+    >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+        >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_date"
+                    android:textSize="@dimen/text_mid_size"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/overlock"
+            />
+
+            <TextView
+                    android:id="@+id/dateOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_low_size"
+                    android:textColor="@color/colorGray"
+                    android:fontFamily="@font/overlock"
+            />
+
+        </LinearLayout>
+
+        <EditText
+                android:id="@+id/fieldNoTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:inputType="number"
+                android:padding="15dp"
+                android:background="@drawable/bg_field1"
+                android:hint="@string/no_table"
+                android:textSize="@dimen/text_mid_size"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/overlock"
+                tools:ignore="Autofill,RelativeOverlap"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/layout_low"
+            android:text="@string/loading_msg"
+            android:textSize="@dimen/text_mid_size"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/overlock"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listItemToOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+        />
+
+        <Button
+                android:id="@+id/orderBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/layout_high"
+                android:layout_marginEnd="@dimen/layout_high"
+                android:layout_marginBottom="@dimen/layout_high"
+                android:background="@drawable/bg_btn1"
+                android:text="@string/order_now"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/overlock"
+                android:textAllCaps="false"
+                style="?attr/actionModeCloseButtonStyle"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Size -->
+    <dimen name="text_low_size">12sp</dimen>
+    <dimen name="text_mid_size">15sp</dimen>
+    <dimen name="text_high_size">20sp</dimen>
+
+    <!-- Margin Size -->
+    <dimen name="layout_low">10sp</dimen>
+    <dimen name="layout_mid">20sp</dimen>
+    <dimen name="layout_high">30sp</dimen>
+
+</resources>

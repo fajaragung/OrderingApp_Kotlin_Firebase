@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_low"
+        android:layout_marginStart="@dimen/layout_low"
+        android:layout_marginEnd="@dimen/layout_low"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="@dimen/layout_low"
+>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/layout_mid"
+            android:paddingStart="@dimen/layout_low"
+            android:paddingEnd="@dimen/layout_low"
+            android:paddingBottom="@dimen/layout_mid"
+    >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap,UselessParent"
+        >
+
+            <TextView
+                    android:id="@+id/coffeeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_mid_size"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/overlock"
+            />
+
+            <TextView
+                    android:id="@+id/coffeePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_low_size"
+                    android:textColor="@color/colorGray"
+                    android:fontFamily="@font/overlock"
+            />
+
+            <LinearLayout
+                    android:id="@+id/viewQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/layout_low"
+                    android:visibility="gone"
+            >
+
+                <ImageButton
+                        android:id="@+id/decrementOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:src="@drawable/ic_minus"
+                        tools:ignore="ContentDescription"
+                />
+
+                <TextView
+                        android:id="@+id/qtyOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/layout_low"
+                        android:layout_marginEnd="@dimen/layout_low"
+                        android:text="@string/zero"
+                        android:textSize="@dimen/text_high_size"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/overlock"
+                />
+
+                <ImageButton
+                        android:id="@+id/incrementOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:src="@drawable/ic_plus"
+                        tools:ignore="ContentDescription"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <CheckBox
+                android:id="@+id/selectedOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+        />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

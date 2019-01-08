@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">OrderingApp</string>
+    <string name="about_app">About App</string>
+    <string name="powered">Powered by Emengsoft</string>
+    <string name="loading_msg">Hi, Order the Coffee you like</string>
+    <string name="i_want_to_order">I want to Order</string>
+    <string name="zero">0</string>
+    <string name="menu">Menu</string>
+    <string name="my_order">My Order</string>
+    <string name="full_name">Full Name</string>
+    <string name="order_date">Order date:</string>
+    <string name="no_table">No. Table</string>
+    <string name="order_now">Order Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="invalid_no_table">Please, insert no. table !</string>
+    <string name="invalid_name">Please, insert your name !</string>
+    <string name="order">Order</string>
+    <string name="see_details">See Details</string>
+    <string name="check_my_order">Check My Order</string>
+    <string name="order_successfully">Order Successfully</string>
+    <string name="order_failure">Order Failure</string>
+</resources>

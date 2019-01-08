@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "176232670774",
+    "firebase_url": "https://orderingapp-aad52.firebaseio.com",
+    "project_id": "orderingapp-aad52",
+    "storage_bucket": "orderingapp-aad52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176232670774:android:49909c3edee34b0c",
+        "android_client_info": {
+          "package_name": "com.emengsoft.orderingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176232670774-qlgi6sh4penim9c5f198b26a9cpn75se.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emengsoft.orderingapp",
+            "certificate_hash": "bb136742ba5cdafad3ae4f38611b3b64e5a358fa"
+          }
+        },
+        {
+          "client_id": "176232670774-gna21qhgvec4hfhb6nj76mjj6g04b12d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuwnJaRaSIfMJ2v5hl185ZRxu8B78xKNs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176232670774-gna21qhgvec4hfhb6nj76mjj6g04b12d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

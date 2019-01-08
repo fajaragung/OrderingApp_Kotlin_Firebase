@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="ToolbarPopup" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Tab Style -->
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorWhite</item>
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+        <item name="tabTextAppearance">@style/TabText</item>
+    </style>
+    <style name="TabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_mid_size</item>
+        <item name="android:textColor">@color/colorOpacityGray</item>
+        <item name="android:fontFamily">@font/overlock</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

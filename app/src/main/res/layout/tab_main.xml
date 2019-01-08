@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+            android:id="@+id/toOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/layout_high"
+            android:layout_marginEnd="@dimen/layout_high"
+            android:layout_marginBottom="@dimen/layout_high"
+            android:background="@drawable/bg_btn1"
+            android:text="@string/i_want_to_order"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/overlock"
+            android:textAllCaps="false"
+            style="?attr/actionModeCloseButtonStyle"
+    />
+
+</RelativeLayout>

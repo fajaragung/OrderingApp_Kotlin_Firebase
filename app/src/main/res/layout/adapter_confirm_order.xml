@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_low"
+        android:layout_marginStart="@dimen/layout_low"
+        android:layout_marginEnd="@dimen/layout_low"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="@dimen/layout_low"
+>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/layout_low"
+            android:paddingTop="@dimen/layout_mid"
+            android:paddingEnd="@dimen/layout_low"
+            android:paddingBottom="@dimen/layout_mid"
+    >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                tools:ignore="RelativeOverlap,UselessParent"
+        >
+
+            <TextView
+                    android:id="@+id/coffeeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/overlock"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_mid_size"
+            />
+
+            <TextView
+                    android:id="@+id/coffeePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/overlock"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/text_low_size"
+            />
+
+            <TextView
+                    android:id="@+id/coffeeQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/overlock"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/text_low_size"
+            />
+
+        </LinearLayout>
+
+        <ImageButton
+                android:id="@+id/deleteSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/ic_delete_photo"
+                tools:ignore="ContentDescription"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>
